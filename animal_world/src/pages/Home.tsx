@@ -1,17 +1,15 @@
-import Title from "./Title";
+import Title from "../components/Title";
 
-function Footer() {
+function Home() {
     return (  
         <>
-        <div className="bg-dark text-light">
-        Footer work
+        
         <Title
                 main="Animall World"
                 sub="Special Livestock Sales"
             />
-        </div>
         </>
     );
 }
 
-export default Footer;
+export default Home;
