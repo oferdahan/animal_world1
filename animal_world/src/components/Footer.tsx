@@ -7,7 +7,7 @@ function Footer() {
         Footer work
         <Title
                 main="Animall World"
-                sub="Special Livestock Sales"
+                sub="2022"
             />
         </div>
         </>
