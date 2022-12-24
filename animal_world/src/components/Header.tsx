@@ -1,31 +1,96 @@
+import { NavLink } from "react-router-dom";
+
 function Header() {
     return (
         <>
       
 
         <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
+          <div className=" navbar-collapse" id="navbarNav">
+    
+
+       <ul className="navbar-nav">  
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <NavLink 
+             className="nav-link active navbar-brand" 
+              aria-current="page"
+              to="/">
+                 Animal <i className='fas fa-dragon ' ></i> World
+                
+            </ NavLink>
+
         </li>
+        </ul>
+
+          <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
+          <NavLink 
+             className="nav-link active navbar-brand" 
+             aria-current="page"
+             to="Home">
+             
+                 Home
+                 
+            </ NavLink>
+
         </li>
+        </ul>
+        
+          <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
+          <NavLink 
+             className="nav-link active navbar-brand" 
+             aria-current="page"
+             to="About">
+                 About
+            </ NavLink>
+
         </li>
+        </ul>
+               </div>
+
+        <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link disabled" href="#"  aria-disabled="true">Disabled</a>
+          <NavLink 
+             className="nav-link active navbar-brand" 
+             aria-current="page"
+             to="Signup">
+              <i className="bi bi-card-text p-1"></i>
+                 Signup
+            </ NavLink>
+
         </li>
-      </ul>
-    </div>
+        </ul>
+
+        <ul className="navbar-nav">
+        <li className="nav-item">
+          <NavLink 
+             className="nav-link active navbar-brand" 
+             aria-current="page"
+             to="Login">
+               <i className="bi bi-box-arrow-in-right p-1 "></i>
+               Login
+            </ NavLink>
+
+        </li>
+        </ul>
+        
+        
+        <ul className="navbar-nav">
+        <li className="nav-item">
+          <NavLink 
+             className="nav-link active navbar-brand" 
+             aria-current="page"
+             to="Logout">
+              <i className="bi bi-box-arrow-left p-1"></i>
+                Logout
+            </ NavLink>
+
+        </li>
+        </ul>
+        
   </div>
 </nav>
        </header> 
