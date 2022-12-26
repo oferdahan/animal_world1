@@ -1,21 +1,28 @@
 import Title from "../components/Title";
 
-function Login() {
+function Business() {
     return ( 
-        <>
-        Login work11
 
+        <>
+        
         <div className="  m-2 ">
 
         <Title
-                 main="Login registered customers"
-                 sub="You can log in as a registered user"
+                 main="Business registration"
+                 sub="Opening a free business account"
                  />
                  </div>
 <div className=" from-control w-50  m-auto px-4 ">
-
+<div className="mb-3">
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Name"
+                    // value={name}
+                    // onChange={(e) => setName(e.target.value)}
+                />
+            </div>
             <div className="mb-3">
-            <label htmlFor="email" className="form-label">email</label>
                 <input
                     type="email"
                     className="form-control"
@@ -25,7 +32,6 @@ function Login() {
                 />
             </div>
             <div className="mb-3">
-            <label htmlFor="password" className="form-label">password</label>
                 <input
                     type="password"
                     className="form-control"
@@ -35,6 +41,9 @@ function Login() {
                 />
             </div>
 
+
+                                 {/* Send verification data to a business account {biz=true} */}
+                                 {/* Click to go to create a business card */}
             <button
                 // onClick={submit}
                 className="btn btn-primary btn-lg"
@@ -43,8 +52,9 @@ function Login() {
             </button>
         </div>
         </>
-        
      );
 }
+     
 
-export default Login;
+
+export default Business;

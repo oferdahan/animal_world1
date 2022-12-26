@@ -10,6 +10,8 @@ import About from './pages/About';
 import Signup from './auth/Signup';
 import Login from './auth/Login';
 import Logout from './auth/Logout';
+import Business from './auth/Business';
+import Create_card from './auth/Create_card';
 
 function App() {
   return (
@@ -37,9 +39,19 @@ function App() {
                    element={<About/>}
                  />
 
+<Route
+                   path='Create_card'
+                   element={<Create_card/>}
+                 />
+
              <Route
                    path='Signup'
                    element={<Signup/>}
+                 />
+
+<Route
+                   path='Business'
+                   element={<Business/>}
                  />
 
              <Route
